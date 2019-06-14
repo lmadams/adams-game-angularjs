@@ -1,0 +1,22 @@
+<div class="container-game">
+  <section class="game">
+
+    <div class="marker">
+      <div>
+        <strong>Jogador: </strong> {{$ctrl.player}}
+      </div>
+      <div>
+        <strong>Rodada: </strong> {{$ctrl.round}}
+      </div>
+    </div>
+
+    <div class="grid-game">
+      <div ng-repeat="card in $ctrl.cards track by $index"
+           ng-click="$ctrl.onClickCard(card, $index)">
+        <div class="card {{$ctrl.cardsSelected.includes($index) ? card : null}}"></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+

@@ -1,0 +1,33 @@
+<navbar></navbar>
+
+<div class="container-background">
+  <div class="rank-result">
+
+    <div class="row-title">
+      <h1>Melhores resultados dos Players</h1>
+    </div>
+
+    <table>
+      <thead>
+      <tr>
+        <th>Posição</th>
+        <th>Player Name</th>
+        <th>Jogadas</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="player in $ctrl.rank">
+        <td>
+          {{$index + 1}}
+        </td>
+        <td>
+          {{player.playerName}}
+        </td>
+        <td>
+          {{player.score}}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

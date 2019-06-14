@@ -1,0 +1,40 @@
+@import '../../common/common';
+
+.container-background {
+  height: calc(100vh - 80px);
+  width: 100vw;
+  background-color: $accentColor;
+  background-image: url($background-url);
+  color: white;
+
+  .rank-result {
+    max-width: 1000px;
+    margin: auto;
+
+    .row-title {
+      display: flex;
+      justify-content: center;
+
+      h1 {
+        margin: 0;
+        padding: 8px;
+      }
+    }
+
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: red;
+    }
+  }
+}

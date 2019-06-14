@@ -1,0 +1,41 @@
+@import '../common';
+
+.navbar {
+  background-color: #021c1e;
+  height: 80px;
+
+  .container {
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    .logo {
+      color: #6fb98f;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .logo:hover {
+      color: white;
+    }
+
+    ul, li {
+      list-style: none;
+      display: flex;
+      width: 150px;
+      font-size: 16px;
+    }
+
+    li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      color: #6fb98f;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import 'common/common';
+@import 'playing-card';
+
+.app {
+  height: 100vh;
+
+  .app-content {
+    height: 100%;
+  }
+}

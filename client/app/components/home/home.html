@@ -1,0 +1,27 @@
+<navbar></navbar>
+
+<main class="home">
+
+  <form ng-submit="$ctrl.onSubmitInitGame()"
+        ng-if="!$ctrl.cards">
+    <div class="form-container">
+      <h1>Jogo de cartas</h1>
+
+      <input ng-model="$ctrl.playerName"
+             placeholder="Nome do jogador"
+             required>
+      <button type="submit">
+        Entrar
+      </button>
+    </div>
+  </form>
+
+
+  <div ng-if="$ctrl.cards"
+       class="game-container">
+    <game cards="$ctrl.cards"
+          player="{{$ctrl.playerName}}"
+          endgame="$ctrl.endgame">
+    </game>
+  </div>
+</main>
